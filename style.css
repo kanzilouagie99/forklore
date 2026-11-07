@@ -1,0 +1,27 @@
+@font-face{font-family:Lora;font-weight:400;font-display:swap;src:url(lora-latin-400-normal.woff2) format("woff2")}
+@font-face{font-family:Lora;font-style:italic;font-weight:400;font-display:swap;src:url(lora-latin-400-italic.woff2) format("woff2")}
+@font-face{font-family:Poppins;font-weight:400;font-display:swap;src:url(poppins-latin-400-normal.woff2) format("woff2")}
+@font-face{font-family:Poppins;font-weight:600;font-display:swap;src:url(poppins-latin-600-normal.woff2) format("woff2")}
+:root{--bg:#F4EEE3;--card:#FBF7F0;--line:#E5DCCD;--ink:#283129;--text:#434A43;--muted:#686C63;--green:#2F3A31;--accent:#BC541D}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--bg)}
+body{font:400 16px/1.65 Poppins,system-ui,sans-serif;color:var(--text);-webkit-font-smoothing:antialiased}
+a{color:var(--accent)}
+.wrap{max-width:720px;margin:0 auto;padding:40px 20px 80px}
+header{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:40px}
+.brand{display:flex;align-items:center;gap:10px;font:italic 400 24px/1 Lora,Georgia,serif;color:var(--ink);text-decoration:none}
+.brand img{width:36px;height:36px;border-radius:10px}
+.lang a{font-size:13px;font-weight:600;color:var(--muted);text-decoration:none;margin-left:12px}
+.lang a.on{color:var(--ink)}
+.eyebrow{font:600 12px/1 Poppins;letter-spacing:.16em;text-transform:uppercase;color:var(--accent);margin:0 0 12px}
+h1{font:400 44px/1.1 Lora,Georgia,serif;color:var(--ink);margin:0 0 16px;letter-spacing:-.01em}
+h1 em{color:var(--accent)}
+h2{font:400 24px/1.25 Lora,Georgia,serif;color:var(--ink);margin:36px 0 8px}
+p,li{max-width:62ch}
+.card{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:22px 24px;margin:24px 0}
+.muted{color:var(--muted);font-size:14px}
+.btn{display:inline-block;margin-top:12px;padding:14px 22px;border-radius:14px;background:var(--accent);color:#fff;font-weight:600;text-decoration:none}
+footer{margin-top:56px;padding-top:20px;border-top:1px solid var(--line);font-size:13px;color:var(--muted)}
+footer a{color:var(--muted);margin-right:16px}
+[hidden]{display:none!important}
+@media (max-width:480px){h1{font-size:36px}}
